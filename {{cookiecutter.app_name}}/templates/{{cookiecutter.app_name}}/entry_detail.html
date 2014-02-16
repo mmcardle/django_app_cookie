@@ -1,6 +1,8 @@
 {% raw %}{% extends "base.html" %}
 
 {% block content %}
-<p>{{ object.name }} - {{ object.created}} - {{ object.last_updated}}</p><hr/>
+<p>{{ object.name }} - {{ object.created}} - {{ object.last_updated}}</p>
+<a href="{{object.get_update_url}}">Edit</a>
+<hr/>
 {% include{%endraw%} "{{cookiecutter.app_name}}{% raw %}/_actions.html" %}
 {% endblock content %}{% endraw %}

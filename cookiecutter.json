@@ -1,4 +1,4 @@
 {
     "app_name": "test_app",
-    "models": ["Model1", "Model2"]
+    "models": ["Project", "Entry"]
 }

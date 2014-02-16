@@ -23,4 +23,7 @@ class {{ model }}(models.Model):
     def get_absolute_url(self):
         return reverse('{{ cookiecutter.app_name }}_{{ model|lower }}_detail', args=(self.slug, ))
 
+    def get_update_url(self):
+        return reverse('{{ cookiecutter.app_name }}_{{ model|lower }}_update', args=(self.slug, ))
+
 {% endfor %}

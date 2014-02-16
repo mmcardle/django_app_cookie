@@ -1,4 +1,4 @@
-{% for model in cookiecutter.models %}
-<a class="btn btn-primary" href="{{ "{% url '" }}{{ cookiecutter.app_name }}_{{ model|lower }}_list{{ "' %}" }}">{{model}} List</a>
-<a class="btn btn-default" href="{{ "{% url '" }}{{ cookiecutter.app_name }}_{{ model|lower }}_create{{ "' %}" }}">Create {{model}}</a>
-{% endfor%}{%raw%}
+{% set views = [ ['_list', 'List'], ['_create', 'Create'] ] -%}
+{% for model in cookiecutter.models %}<strong>{{model}} Actions</strong>{% for view in views %}
+<a class="btn btn-default" href="{{ "{% url '" }}{{ cookiecutter.app_name }}_{{ model|lower }}{{view.0}}{{ "' %}" }}">{{model}} {{view.1}}</a>
+{% endfor%}{% endfor%}
