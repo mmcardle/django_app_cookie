@@ -20,7 +20,7 @@ Required Input
 ```
 {
     "app_name": "test_app",
-    "models": ["Project", "Entry"]
+    "models": ["Model1", "Model2"]
 }
 ```
 
