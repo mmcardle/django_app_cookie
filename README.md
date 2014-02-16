@@ -34,7 +34,7 @@ Output Files
 * forms.py
 * tests.py 
 * Templates for each Model
-..* <Model>_list.html
-..* <Model>_detail.html
-..* <Model>_form.html
+ * <Model>_list.html
+ * <Model>_detail.html
+ * <Model>_form.html
 
