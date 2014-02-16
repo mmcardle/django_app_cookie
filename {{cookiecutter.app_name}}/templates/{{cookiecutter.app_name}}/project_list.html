@@ -1,0 +1,10 @@
+{% raw %}{% extends "base.html" %}
+
+{% block content %}
+<ul>
+    {% for object in object_list %}
+    <li><a href="{{object.get_absolute_url}}">{{ object }}</a> {{ object.created}} - {{ object.last_updated}} </li>
+    {% endfor %}
+</ul><hr>
+{% include{%endraw%} "{{cookiecutter.app_name}}{% raw %}/_actions.html" %}
+{% endblock content %}{% endraw %}

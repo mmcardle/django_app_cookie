@@ -1,0 +1,4 @@
+{% for model in cookiecutter.models %}
+<a class="btn btn-primary" href="{{ "{% url '" }}{{ cookiecutter.app_name }}_{{ model|lower }}_list{{ "' %}" }}">{{model}} List</a>
+<a class="btn btn-default" href="{{ "{% url '" }}{{ cookiecutter.app_name }}_{{ model|lower }}_create{{ "' %}" }}">Create {{model}}</a>
+{% endfor%}{%raw%}
