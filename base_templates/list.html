@@ -18,6 +18,6 @@
     </tr>
     {% endfor %}
 </table>
-<hr/>
-{% include{%endraw%} "{{cookiecutter.app_name}}{% raw %}/_actions.html" %}
+<a class="btn btn-default"
+   href="{%{% endraw %} url '{{app_name}}_{{model|lower}}_create' {% raw %}%}{% endraw %}">Create {{model}}{% raw %}</a>
 {% endblock content %}{% endraw %}
