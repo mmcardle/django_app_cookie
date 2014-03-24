@@ -5,7 +5,9 @@ from .models import {%for model in cookiecutter.models %}{{model}}{% if loop.ind
 {%for model in cookiecutter.models %}
 
 class {{ model }}ViewTest(unittest.TestCase):
-    "Tests for model {{ model }}"
+    """
+    Tests for model {{ model }}"
+    """
     def setUp(self):
         self.client = Client()
 
